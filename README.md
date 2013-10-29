@@ -1,6 +1,6 @@
 # grunt-compareJSON
 
-> Compare some JSON files
+> Compare multiples JSON files and report the keys differences
 
 ## Getting Started
 This plugin requires Grunt `~0.4.1`
@@ -25,60 +25,39 @@ In your project's Gruntfile, add a section named `compareJSON` to the data objec
 ```js
 grunt.initConfig({
   compareJSON: {
-    options: {
-      // Task-specific options go here.
-    },
-    your_target: {
-      // Target-specific file lists and/or options go here.
-    },
-  },
+    compare: {
+      src: ['<dir>'],
+      fatal: true | false
+    }
+  }
 })
 ```
 
-### Options
+### Arguments
 
-#### options.separator
-Type: `String`
-Default value: `',  '`
+#### src
+Type: `Array[String]`<br />
+Mandatory: `true`
 
-A string value that is used to do something with whatever.
+Directory where are the files to compare. The path can use wildcard.
 
-#### options.punctuation
-Type: `String`
-Default value: `'.'`
+#### fatal
+Type: `Boolean`<br />
+Mandatory: `false`<br />
+Default value: `true`
 
-A string value that is used to do something else with whatever else.
+Flag to indicate wheter or not the task failed if some differences are found.
 
 ### Usage Examples
 
-#### Default Options
-In this example, the default options are used to do something with whatever. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result would be `Testing, 1 2 3.`
-
 ```js
 grunt.initConfig({
   compareJSON: {
-    options: {},
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
-})
-```
-
-#### Custom Options
-In this example, custom options are used to do something else with whatever else. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result in this case would be `Testing: 1 2 3 !!!`
-
-```js
-grunt.initConfig({
-  compareJSON: {
-    options: {
-      separator: ': ',
-      punctuation: ' !!!',
-    },
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
+    compare: {
+      src: ['dir/**/*.json'],
+      fatal: true
+    }
+  }
 })
 ```
 
