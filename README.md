@@ -20,11 +20,11 @@ grunt.loadNpmTasks('grunt-compare-json');
 ## The "compare-json" task
 
 ### Overview
-In your project's Gruntfile, add a section named `compare-json` to the data object passed into `grunt.initConfig()`.
+In your project's Gruntfile, add a section named `comparejson` to the data object passed into `grunt.initConfig()`.
 
 ```js
 grunt.initConfig({
-  compare-json: {
+  comparejson: {
     compare: {
       src: ['<dir>'],
       fatal: true | false
@@ -52,7 +52,7 @@ Flag to indicate wheter or not the task failed if some differences are found.
 
 ```js
 grunt.initConfig({
-  compare-json: {
+  comparejson: {
     compare: {
       src: ['dir/**/*.json'],
       fatal: true
