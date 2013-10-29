@@ -1,6 +1,6 @@
 /*
- * grunt-compareJSON
- * https://github.com/dpellier/compareJSON
+ * grunt-compare-json
+ * https://github.com/dpellier/compare-json
  *
  * Copyright (c) 2013 dpellier
  * Licensed under the MIT license.
@@ -11,10 +11,10 @@ var utils = require('../lib/utils');
 
 module.exports = function(grunt) {
 
-    grunt.registerMultiTask('compareJSON', 'Compare some JSON files', function() {
+    grunt.registerMultiTask('comparejson', 'Compare some JSON files', function() {
 
         // Fail task if no src directory property is set.
-        grunt.config.requires('compareJSON.compare.src');
+        grunt.config.requires('comparejson.compare.src');
 
         var allParsedFiles = [];
 
@@ -32,7 +32,7 @@ module.exports = function(grunt) {
                 grunt.log.error(report);
             });
 
-            return !grunt.config.get('compareJSON').compare.fatal;
+            return !grunt.config.get('comparejson').compare.fatal;
         }
 
         grunt.log.writeln('SUCCESS : all files have the same keys.');

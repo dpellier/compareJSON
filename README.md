@@ -1,4 +1,4 @@
-# grunt-compareJSON
+# grunt-compare-json
 
 > Compare multiples JSON files and report the keys differences
 
@@ -8,23 +8,23 @@ This plugin requires Grunt `~0.4.1`
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
 ```shell
-npm install grunt-compareJSON --save-dev
+npm install grunt-compare-json --save-dev
 ```
 
 Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
 
 ```js
-grunt.loadNpmTasks('grunt-compareJSON');
+grunt.loadNpmTasks('grunt-compare-json');
 ```
 
-## The "compareJSON" task
+## The "compare-json" task
 
 ### Overview
-In your project's Gruntfile, add a section named `compareJSON` to the data object passed into `grunt.initConfig()`.
+In your project's Gruntfile, add a section named `compare-json` to the data object passed into `grunt.initConfig()`.
 
 ```js
 grunt.initConfig({
-  compareJSON: {
+  compare-json: {
     compare: {
       src: ['<dir>'],
       fatal: true | false
@@ -52,7 +52,7 @@ Flag to indicate wheter or not the task failed if some differences are found.
 
 ```js
 grunt.initConfig({
-  compareJSON: {
+  compare-json: {
     compare: {
       src: ['dir/**/*.json'],
       fatal: true

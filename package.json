@@ -1,23 +1,23 @@
 {
-    "name": "grunt-compareJSON",
+    "name": "grunt-compare-json",
     "description": "Compare some JSON files",
     "version": "0.1.0",
-    "homepage": "https://github.com/dpellier/compareJSON",
+    "homepage": "https://github.com/dpellier/compare-json",
     "author": {
         "name": "dpellier",
         "email": "dpellier@gmail.com"
     },
     "repository": {
         "type": "git",
-        "url": "git@github.com:dpellier/compareJSON.git"
+        "url": "git@github.com:dpellier/compare-json.git"
     },
     "bugs": {
-        "url": "https://github.com/dpellier/compareJSON/issues"
+        "url": "https://github.com/dpellier/compare-json/issues"
     },
     "licenses": [
         {
             "type": "MIT",
-            "url": "https://github.com/dpellier/compareJSON/blob/master/LICENSE-MIT"
+            "url": "https://github.com/dpellier/compare-json/blob/master/LICENSE-MIT"
         }
     ],
     "main": "Gruntfile.js",

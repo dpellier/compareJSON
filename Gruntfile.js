@@ -1,6 +1,6 @@
 /*
- * grunt-compareJSON
- * https://github.com/dpellier/compareJSON
+ * grunt-compare-json
+ * https://github.com/dpellier/compare-json
  *
  * Copyright (c) 2013 dpellier
  * Licensed under the MIT license.
@@ -23,7 +23,7 @@ module.exports = function(grunt) {
             }
         },
 
-        compareJSON: {
+        comparejson: {
             compare: {
                 src: ['test/**/*.json'],
                 filter: 'isFile',
@@ -55,5 +55,5 @@ module.exports = function(grunt) {
 
     grunt.registerTask('test', ['jshint', 'simplemocha']);
 
-    grunt.registerTask('default', ['jshint', 'compareJSON']);
+    grunt.registerTask('default', ['jshint', 'comparejson']);
 };
