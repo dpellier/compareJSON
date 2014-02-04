@@ -67,4 +67,21 @@ describe('compareMaps', function() {
         // then
         assert.equal(reports.length, 1);
     });
+
+
+    it('should return the missing key if some differences are found inside of sub-objects', function() {
+        // given
+        var valueA = {"a": {"me":"a","mo":"a"}, "b": "b"};
+        var valueB = {"a": {"me":"a"}, "b": "b"};
+        var maps = [
+            {parsedJSON: valueA, fileName: 'fileA'},
+            {parsedJSON: valueB, fileName: 'fileB'}
+        ];
+
+        // when
+        var reports = utils.compareMaps(maps);
+
+        // then
+        assert.equal(reports.length, 1);
+    });
 });
