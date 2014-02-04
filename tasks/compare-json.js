@@ -20,7 +20,8 @@ module.exports = function(grunt) {
 
         // First, parse all the json file into javascript map
         this.files.forEach(function(file) {
-            allParsedFiles = utils.JSONFilesToMap(grunt, file.src);
+            console.log('Parse File '+file);
+            allParsedFiles=utils.JSONFilesToMap(grunt, file.src);
         });
 
         // Then, compare each
