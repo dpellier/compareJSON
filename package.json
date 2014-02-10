@@ -1,7 +1,7 @@
 {
     "name": "grunt-compare-json",
     "description": "Compare some JSON files",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "homepage": "https://github.com/dpellier/compare-json",
     "author": {
         "name": "dpellier",
