@@ -4,5 +4,10 @@
     "JSON.string.3": "string3",
 
     "JSON.int.1": "int1",
-    "JSON.int.2": "int2"
+    "JSON.int.2": "int2",
+
+    "JSON.subs": {
+        "sub.1": "sub1",
+        "sub.2": "sub2"
+    }
 }

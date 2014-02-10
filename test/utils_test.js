@@ -80,7 +80,7 @@ describe('compareMaps', function() {
 
         // when
         var reports = utils.compareMaps(maps);
-
+console.log(reports);
         // then
         assert.equal(reports.length, 1);
     });

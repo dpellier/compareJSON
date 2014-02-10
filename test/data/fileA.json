@@ -5,5 +5,9 @@
 
     "JSON.int.1": "int1",
     "JSON.int.2": "int2",
-    "JSON.int.3": "int3"
+    "JSON.int.3": "int3",
+
+    "JSON.subs": {
+        "sub.1": "sub1"
+    }
 }
