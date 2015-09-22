@@ -27,6 +27,7 @@ module.exports = function(grunt) {
             compare: {
                 src: ['test/**/*.json'],
                 filter: 'isFile',
+                byPath:true,
                 fatal: true
             }
         },

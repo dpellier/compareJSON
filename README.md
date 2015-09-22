@@ -27,7 +27,8 @@ grunt.initConfig({
   comparejson: {
     compare: {
       src: ['<dir>'],
-      fatal: true | false
+      fatal: true | false,
+      byPath: true | false
     }
   }
 })
@@ -48,6 +49,18 @@ Default value: `true`
 
 Flag to indicate wheter or not the task failed if some differences are found.
 
+#### byPath
+Type: `Boolean`<br />
+Mandatory: `false`<br />
+Default value: `false`
+
+Flag to indicate that files will be compared by path. For example :
+/path1/file1.json
+/path1/file1.json
+/path2/file3.json
+
+The file1.json will only be compared with the file2.json. 
+
 ### Usage Examples
 
 ```js
@@ -56,6 +69,7 @@ grunt.initConfig({
     compare: {
       src: ['dir/**/*.json'],
       fatal: true
+      byPath: false
     }
   }
 })
